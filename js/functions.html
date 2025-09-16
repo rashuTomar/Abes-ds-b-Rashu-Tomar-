@@ -15,13 +15,19 @@
         }
     </style>
 </head>
-<body>
+<body id="body">
 
-
+<!-- 
     <div id="first">
         <button onclick="abes()"> click</button>
         <p id="aaa"></p>
-    </div>
+    </div> -->
+
+
+    <button onclick="red()">RED</button>
+    <button onclick="blue()">BLUE</button>
+    <button onclick="green()">GREEN</button>
+    
     
 
     <script>
@@ -44,8 +50,20 @@
         // add(5,6);
         // sub(10,3);
 
-        function abes(){
-            document.getElementById("aaa").innerHTML="Helllo this is Tomar ";
+        // function abes(){
+        //     document.getElementById("aaa").innerHTML="Helllo this is Tomar ";
+        // }
+
+
+
+        function red(){
+            document.getElementById("body").style.backgroundColor="red";
+        }
+        function blue(){
+            document.getElementById("body").style.backgroundColor="blue";
+        }
+        function green(){
+            document.getElementById("body").style.backgroundColor="green";
         }
 
 
