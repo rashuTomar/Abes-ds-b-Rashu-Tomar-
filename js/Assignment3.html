@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .card{
+            
+            
+            height: 85vh;
+            width: 50vw;
+            border: 3px solid;
+            margin:3vh auto 0 auto ;
+            background-color: beige;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            gap: 23%;
+            /* justify-content: center; */
+        }
+
+        .logo img {
+            border-radius: 50%;
+            height: 80px;
+            margin-left: 3vw;
+            margin-top: 10px;
+            
+        }
+        .display{
+            margin: 25vh auto 0 auto;
+            height: 70px;
+            width: 70px;
+            border: 2px solid;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .buttons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20vw;
+        }
+        .btn{
+            height: 50px;
+            width: 100px;
+            margin-top: 100px;
+
+
+
+        }
+        .headline h1{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="navbar">
+            <div class="logo"><img src="/css\user1.jpeg" alt=""></div>
+            <div class="headline">
+                <h1>Counter App</h1>
+            </div>
+        </div>
+
+        <div class="display">
+            <h1 id="number">0</h1>
+        </div>
+
+        <div class="buttons">
+            <button class="btn" id="bbb" onclick="sub()"><h3>sub</h3></button>
+            <button class="btn" id="aaa" onclick="add()"><h3>add</h3></button>
+            
+        </div>
+
+    </div>
+
+
+
+
+<script>
+    var count=0;
+    function add(){
+        if(count<10){
+            count=count+1;
+            document.getElementById("number").innerHTML=`${count}`;
+        }
+        else{
+            alert("maximum limit reached");
+        }
+
+    }
+    function sub(){
+        if(count>0){
+            count=count-1;
+            document.getElementById("number").innerHTML=`${count}`;
+        }
+        else{
+            alert("minimum limit reached");
+        }
+
+    }
+
+    
+
+
+
+</script>
+</body>
+
+</html>
