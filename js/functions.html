@@ -4,29 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+    <style>
+        #first{
+            width: 300px;
+            height: 300px;
+            background-color:beige ;
+            border: 2px solid;
+        }
+    </style>
 </head>
 <body>
+
+
+    <div id="first">
+        <button onclick="abes()"> click</button>
+        <p id="aaa"></p>
+    </div>
     
 
     <script>
+        // function abes(){
+        //     document.writeln("this is rashu tomar");
+        // }
+
+        // function add( a, b){
+        //     var sum= a+b;
+        //     document.writeln(sum);
+        // }
+
+        // function sub(a,b){
+        //     var ans=a-b;
+        //     document.writeln(`the subtraction of two no. is ${ans}`);
+        // }
+
+        // abes();
+
+        // add(5,6);
+        // sub(10,3);
+
         function abes(){
-            document.writeln("this is rashu tomar");
+            document.getElementById("aaa").innerHTML="Helllo this is Tomar ";
         }
-
-        function add( a, b){
-            var sum= a+b;
-            document.writeln(sum);
-        }
-
-        function sub(a,b){
-            var ans=a-b;
-            document.writeln(`the subtraction of two no. is ${ans}`);
-        }
-
-        abes();
-
-        add(5,6);
-        sub(10,3);
 
 
     </script>
