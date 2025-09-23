@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Class in js</title>
+</head>
+<body>
+
+    <h2 id="first"></h2>
+
+    <script>
+        class Car{
+            constructor(name, year){
+                this.name=name;
+                this.year=year;
+            }
+        }
+
+        const car1= new Car("creta",1990);
+        const car2= new Car("alto", 1870);
+
+        document.getElementById("first").innerHTML=car2.name;
+
+    </script>
+    
+</body>
+</html>
