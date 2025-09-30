@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <h2 id="first"></h2>
+    <h2 id="second"></h2>
+
+
+    <script>
+        const person={
+            firstname:"Sharma",
+            lastname:"Rohit",
+            age:69
+        }
+
+        // document.getElementById("second").innerHTML=person.age;
+        // document.getElementById("first").innerHTML=person.lastname;
+
+        let {lastname, age}= person;
+
+        document.getElementById("first").innerHTML=lastname;
+
+    </script>
+</body>
+</html>
