@@ -50,40 +50,40 @@
     <script>
 
 
-        // const stu1 = new Object({
-        //     name: "Student1",
-        //     class: "BTech",
-        //     branch: "IT"
-        // });
-        // const stu2 = new Object({
-        //     name: "Student2",
-        //     class: "BTech",
-        //     branch: "IT"
-        // });
-        // const stu3 = new Object({
-        //     name: "Student3",
-        //     class: "BTech",
-        //     branch: "IT"
-        // });
-        // const stu4 = new Object({
-        //     name: "Student4",
-        //     class: "BTech",
-        //     branch: "DS"
-        // });
-        // const stu5 = new Object({
-        //     name: "Student5",
-        //     class: "BTech",
-        //     branch: "CSE"
-        // });
+        const stu1 = new Object({
+            name: "Student1",
+            class: "BTech",
+            branch: "IT"
+        });
+        const stu2 = new Object({
+            name: "Student2",
+            class: "BTech",
+            branch: "IT"
+        });
+        const stu3 = new Object({
+            name: "Student3",
+            class: "BTech",
+            branch: "IT"
+        });
+        const stu4 = new Object({
+            name: "Student4",
+            class: "BTech",
+            branch: "DS"
+        });
+        const stu5 = new Object({
+            name: "Student5",
+            class: "BTech",
+            branch: "CSE"
+        });
 
-        // const arr = new Array({ stu1, stu2, stu3, stu4, stu5 });
+        let arr = new Array( stu1, stu2, stu3, stu4, stu5 );
 
-        for (let i = 0; i < 5; i++) {
-            if (arr[i].branch === "IT") {
-                // document.getElementById("heading").innerHTML = "IT Students"
-                // document.getElementById("name").innerHTML = `Name: ${stu1.name}`;
-                // document.getElementById("class").innerHTML = `Class: ${stu1.class}`;
-                // document.getElementById("branch").innerHTML = `Branch:${stu1.branch}`;
+        for (a of arr) {
+            if (a.branch === "IT") {
+                document.getElementById("heading").innerHTML = "IT Students"
+                document.getElementById("name").innerHTML = `Name: ${stu1.name}`;
+                document.getElementById("class").innerHTML = `Class: ${stu1.class}`;
+                document.getElementById("branch").innerHTML = `Branch:${stu1.branch}`;
                 console.log("running");
                 
 
