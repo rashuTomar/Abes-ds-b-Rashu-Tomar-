@@ -7,12 +7,31 @@
     
 
     <script>
-        const arr1= [1,2,3,4];
-        const arr2= [3,2,1];
+        // const arr1= [1,2,3,4];
+        // const arr2= [3,2,1];
 
-        let arr=[...arr1, ...arr2];
+        // let arr=[...arr1, ...arr2];
 
-        document.writeln(arr);
+        // document.writeln(arr);
+
+        const colg={
+            name:"ABES",
+            code: 032,
+            location: "lal qua"
+
+        };
+
+        const stu={
+            name: "Rohit sharma",
+            branch: "metallurgy",
+            year: "5th"
+        };
+
+        const result={...colg , ...stu};
+        document.writeln(result.name);
+        
+
+        
     </script>
 </body>
 </html>
