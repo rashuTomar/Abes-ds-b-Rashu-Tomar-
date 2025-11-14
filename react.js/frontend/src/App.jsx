@@ -1,14 +1,30 @@
+import React, { useEffect, useState } from "react";
 import "./App.css";
-import Card from "./components/Card";
-import Navbar from "./components/Navbar";
-import Count1 from "./components/Count1";
-import Link1 from "./components/Link1";
+
+import Fashion from "./components/Fashion";
 
 
 function App() {
+
+  const [books, setBooks]= useState([]);
+  useEffect(()=>{fetch("https://fakestoreapi.com/products")
+    .then(res=>res.json())
+    .then(data=>{
+      setBooks(data);
+    })
+  
+  },[])
+
   return (
     <div>
-      <Link1/>
+
+      {
+        books.map((b,i)=>(
+          <Fashion key={i} props={b}/>
+
+        ))
+      }
+      
     </div>
   );
 }
