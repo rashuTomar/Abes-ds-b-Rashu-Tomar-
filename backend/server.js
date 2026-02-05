@@ -8,8 +8,29 @@ app.get("/",(req,res)=>{
 })
 
 app.get("/about", (req,res)=>{
-    res.send("<h1>this is my first route server</h1>")
+    
+    let students=[
+    {
+        id:1,
+        name: "rashu tomar",
+        edu :"btech"
+    },
+    {
+        id:2,
+        name: "rohit chomu",
+        edu :"home scinece"
+    },
+    {
+        id:3,
+        name: "mishra",
+        edu :"polytechnic"
+    }
+]
+res.send(students)
 })
+
+
+
 
 
 app.listen(port,()=>{
